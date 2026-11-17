@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupplyBridge - Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SupplyBridge Navigation Bar -->
+    <header>
+        <a href="#" class="logo">SupplyBridge*</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#">Blog &#x25BE;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#">Articles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Plans &#x25BE;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Freelancer</a></li>
+                        <li><a href="#">Startup</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="#" class="btn-login">Log In</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <div class="banner-title">SUPPLY BRIDGE KNOWLEDGE QUIZ</div>
+
+        <div class="quiz-body" id="quizContainer">
+            <!-- Top Row: Question Counter + Progress Bar & Score -->
+            <div class="quiz-header">
+                <div class="progress-box">
+                    <span id="questionCounter" class="meta-label">Question 1/5</span>
+                    <div class="progress-track">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="score-box">
+                    <span class="meta-label">Score</span>
+                    <span id="scoreDisplay" class="score-number">0</span>
+                </div>
+            </div>
+
+            <!-- Question Title -->
+            <h2 id="questionText" class="question-title">Question goes here</h2>
+
+            <!-- Options A, B, C, D -->
+            <div id="optionsList" class="options-list"></div>
+
+            <!-- Feedback Message & Next Button (onclick) -->
+            <div class="quiz-footer">
+                <p id="feedbackText" class="feedback-text"></p>
+                <button type="button" id="nextBtn" class="btn-next" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Supply Bridge. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
